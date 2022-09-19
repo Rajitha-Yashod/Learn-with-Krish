@@ -1,0 +1,10 @@
+<div style="width:700px; height: 250px; margin:0 auto;">
+
+  <form (ngSubmit)="createStock(availableStock, allocatedAmount)">
+    <label class="heading">Add Stock</label><br />
+    <input type="text" name="Add Stock" #availableStock /><br />
+    <label class="heading">Add Allocated Stock</label><br />
+    <input type="text" name="Add Allocated Amount" #allocatedAmount /><br />
+    <input type="submit" name="Create Stock" value="Create Stock" (click)="reloadPage()" /><br />
+  </form>
+</div>
